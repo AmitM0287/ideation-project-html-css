@@ -1,0 +1,60 @@
+.main-container {
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.address-box {
+    background-color: black;
+    color: white;
+}
+
+.address-box p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+}
+
+.navbar a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar img {
+    padding-right: 20%;
+}
+
+.background {
+    margin-top: 0.5%;
+    background-image: url('../images/bed-room.jpg');
+    background-size: cover;
+    height: 700px;
+}
+
+.footer {
+    margin-top: 1%;
+    background-image: url('../images/footer.jpg');
+    background-size: cover;
+    height: 500px;
+}
