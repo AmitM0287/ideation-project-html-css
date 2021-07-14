@@ -49,7 +49,75 @@
     margin-top: 1%;
     background-image: url('../images/bed-room.jpg');
     background-size: cover;
-    height: 700px;
+    height: 720px;
+}
+
+.background-content {
+    display: flex;
+    justify-content: center;
+}
+
+.background h1 {
+    color: white;
+    font-size: 300%;
+    margin-top: 20%;
+    margin-left: 15%;
+}
+
+.get-quote-form {
+    width: 30%;
+    height: 480px;
+    background-color: white;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+
+.get-quote-form {
+    padding-left: 2%;
+}
+
+.line {
+    border: 1px solid red;
+    opacity: 0.7;
+    width: 50px;
+}
+
+.name {
+    margin-top: 20px;
+}
+
+.get-quote-form input {
+    width: 228px;
+    height: 25px;
+}
+
+.phone, .email {
+    margin-top: 13px;
+}
+
+.get-quote-form select {
+    width: 234px;
+    height: 28px;
+    margin-top: 13px;
+}
+
+.get-quote-form textarea {
+    margin-top: 13px;
+}
+
+.get-quote-form button {
+    background-color: red;
+    color: white;
+    border: none;
+    margin-top: 13px;
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.submit-btn:hover{
+    opacity: 0.8;
 }
 
 .footer {
