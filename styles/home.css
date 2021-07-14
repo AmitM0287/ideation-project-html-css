@@ -17,8 +17,8 @@
 }
 
 .address-box p {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .navbar li {
@@ -46,7 +46,7 @@
 }
 
 .background {
-    margin-top: 0.5%;
+    margin-top: 1%;
     background-image: url('../images/bed-room.jpg');
     background-size: cover;
     height: 700px;
