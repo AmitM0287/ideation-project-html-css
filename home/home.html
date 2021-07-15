@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTERIART</title>
     <link rel="stylesheet" href="../styles/home.css">
+    <script src="https://kit.fontawesome.com/9a350debde.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -43,33 +44,39 @@
                 <form class="get-quote-form">
                     <h2>GET A QUOTE</h2>
                     <div class="line"></div>
-                    <div>
+                    <div class="input-container">
+                        <i class="far fa-user" id="user-icon"></i>
                         <input class="name" name="name" placeholder="Your name" type="text" required>
                     </div>
-                    <div>
+                    <div class="input-container">
+                        <i class="fas fa-phone-alt"></i>
                         <input class="phone" name="phone" placeholder="Your phone" type="text" required>
                     </div>
-                    <div>
+                    <div class="input-container">
+                        <i class="far fa-envelope"></i>
                         <input class="email" name="email" placeholder="Your email" type="email" required>
                     </div>
-                    <div>
-                        <select name="property" required>
+                    <div class="input-container">
+                        <i class="fas fa-home"></i>
+                        <select class="property" name="property" required>
                             <option value="">Type of property</option>
                             <option value="property type 1">Property type 1</option>
                             <option value="property type 2">Property type 2</option>
                             <option value="property type 3">Property type 3</option>
                         </select>
                     </div>
-                    <div>
-                        <select name="service" required>
+                    <div class="input-container">
+                        <i class="fas fa-cog"></i>
+                        <select class="service" name="service" required>
                             <option value="">Type of service</option>
                             <option value="service type 1">Service type 1</option>
                             <option value="service type 2">Service type 2</option>
                             <option value="service type 3">Service type 3</option>
                         </select>
                     </div>
-                    <div>
-                        <textarea name="" placeholder="Your message" cols="27" rows="6" required></textarea>
+                    <div class="input-container">
+                        <i class="far fa-comment"></i>
+                        <textarea class="message" name="message" placeholder="Your message" cols="21" rows="6" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">SUBMIT</button>
                 </form>
