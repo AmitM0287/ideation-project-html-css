@@ -88,8 +88,10 @@
 }
 
 .get-quote-form input {
-    width: 228px;
+    width: 180px;
     height: 25px;
+    padding-left: 10px;
+    outline: none;
 }
 
 .phone, .email {
@@ -97,13 +99,59 @@
 }
 
 .get-quote-form select {
-    width: 234px;
-    height: 28px;
+    width: 196px;
+    height: 30px;
     margin-top: 13px;
+    padding-left: 10px;
+    outline: none;
 }
 
 .get-quote-form textarea {
     margin-top: 13px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.name:focus {
+    border: 2px solid cornflowerblue;
+}
+
+.phone:focus {
+    border: 2px solid cornflowerblue;
+}
+
+.email:focus {
+    border: 2px solid cornflowerblue;
+}
+
+.property:focus {
+    border: 2px solid cornflowerblue;
+}
+
+.service:focus {
+    border: 2px solid cornflowerblue;
+}
+
+.message:focus {
+    border: 2px solid cornflowerblue;
+}
+
+.input-container i {
+    padding: 6.9px;
+    color: white;
+    background-color: cornflowerblue;
+    text-align: center;
+    min-width: 20px;
+    margin-top: 13px;
+}
+
+#user-icon {
+    margin-top: 20px;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .get-quote-form button {
