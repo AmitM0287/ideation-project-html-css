@@ -19,15 +19,17 @@
 .address-box p {
     padding-top: 7px;
     padding-bottom: 7px;
-    padding-left: 8%;
+    padding-left: 7%;
 }
 
 #facebook {
     margin-left: 20%;
+    cursor: pointer;
 }
 
 #icons {
     margin-left: 0.5%;
+    cursor: pointer;
 }
 
 .navbar li {
@@ -121,33 +123,33 @@
 }
 
 .name:focus {
-    border: 2px solid cornflowerblue;
+    border: 2px solid gray;
 }
 
 .phone:focus {
-    border: 2px solid cornflowerblue;
+    border: 2px solid gray;
 }
 
 .email:focus {
-    border: 2px solid cornflowerblue;
+    border: 2px solid gray;
 }
 
 .property:focus {
-    border: 2px solid cornflowerblue;
+    border: 2px solid gray;
 }
 
 .service:focus {
-    border: 2px solid cornflowerblue;
+    border: 2px solid gray;
 }
 
 .message:focus {
-    border: 2px solid cornflowerblue;
+    border: 2px solid gray;
 }
 
 .input-container i {
     padding: 6.9px;
     color: white;
-    background-color: cornflowerblue;
+    background-color: gray;
     text-align: center;
     min-width: 20px;
     margin-top: 13px;
@@ -230,4 +232,46 @@
     background-image: url('../images/footer.jpg');
     background-size: cover;
     height: 500px;
+    display: flex;
+}
+
+.our-services {
+    color: white;
+    margin-top: 10%;
+    margin-left: 7%;
+    margin-right: 4%;
+}
+
+.other-services {
+    color: white;
+    display: flex;
+    margin-top: 5%;
+}
+
+.design-planning {
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+.services-management {
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+.other-services img {
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+}
+
+.other-services h4 {
+    cursor: pointer;
+}
+
+.design-planning img {
+    margin-left: 12%;
+}
+
+.services-management img {
+    margin-left: 18%;
 }
