@@ -19,7 +19,15 @@
 .address-box p {
     padding-top: 7px;
     padding-bottom: 7px;
-    padding-left: 5%;
+    padding-left: 8%;
+}
+
+#facebook {
+    margin-left: 20%;
+}
+
+#icons {
+    margin-left: 0.5%;
 }
 
 .navbar li {
