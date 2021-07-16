@@ -180,8 +180,7 @@
                 window.location.reload();
             }, 
             error: function (response) {
-                var res = response;
-                alert(res)
+                alert(response.responseJSON.message);
                 alert('Registration failed!');
             }
         });
