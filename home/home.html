@@ -176,8 +176,12 @@
             },
             success: function (response) {
                 alert('Registration successful!');
+                // Refresh page
+                window.location.reload();
             }, 
             error: function (response) {
+                var res = response;
+                alert(res)
                 alert('Registration failed!');
             }
         });
