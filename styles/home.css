@@ -162,7 +162,7 @@ body {
 
 .about-us-section {
     display: flex;
-    background-color: #F8F8F8;
+    background-color: #F4F4F4;
     height: 510px;
 }
 
@@ -185,6 +185,11 @@ body {
     margin-top: 4%;
 }
 
+.commercial-design p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .residental-design {
     width: 290px;
     height: 410px;
@@ -193,6 +198,11 @@ body {
     margin-left: 5%;
     margin-right: 12%;
     margin-top: 4%;
+}
+
+.residental-design p {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .read-more-btn {
