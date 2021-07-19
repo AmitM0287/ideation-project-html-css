@@ -1,3 +1,7 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .main-container {
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -19,11 +23,11 @@
 .address-box p {
     padding-top: 7px;
     padding-bottom: 7px;
-    padding-left: 7%;
+    padding-left: 8.5%;
 }
 
 #facebook {
-    margin-left: 20%;
+    margin-left: 26%;
     cursor: pointer;
 }
 
@@ -70,20 +74,17 @@
 
 .background h1 {
     color: white;
-    font-size: 300%;
-    margin-top: 20%;
-    margin-left: 15%;
+    font-size: 280%;
+    margin-top: 21%;
+    margin-left: 16%;
 }
 
 .get-quote-form {
     width: 30%;
     height: 480px;
     background-color: white;
-    margin-right: 5%;
+    margin-right: 10%;
     margin-top: 10%;
-}
-
-.get-quote-form {
     padding-left: 2%;
 }
 
@@ -98,10 +99,12 @@
 }
 
 .get-quote-form input {
-    width: 180px;
-    height: 25px;
+    width: 186px;
+    height: 29px;
     padding-left: 10px;
     outline: none;
+    border: #F0F0F0;
+    background-color: #F0F0F0;
 }
 
 .phone, .email {
@@ -109,47 +112,25 @@
 }
 
 .get-quote-form select {
-    width: 196px;
+    width: 198px;
     height: 30px;
     margin-top: 13px;
     padding-left: 10px;
     outline: none;
+    border: #F0F0F0;
 }
 
 .get-quote-form textarea {
     margin-top: 13px;
     padding-left: 10px;
     outline: none;
-}
-
-.name:focus {
-    border: 2px solid gray;
-}
-
-.phone:focus {
-    border: 2px solid gray;
-}
-
-.email:focus {
-    border: 2px solid gray;
-}
-
-.property:focus {
-    border: 2px solid gray;
-}
-
-.service:focus {
-    border: 2px solid gray;
-}
-
-.message:focus {
-    border: 2px solid gray;
+    border: 2px solid #F0F0F0;
 }
 
 .input-container i {
     padding: 6.9px;
     color: white;
-    background-color: gray;
+    background-color: #F0F0F0;
     text-align: center;
     min-width: 20px;
     margin-top: 13px;
@@ -181,35 +162,37 @@
 
 .about-us-section {
     display: flex;
-    margin-top: 1%;
-    background-color: aliceblue;
-    height: 450px;
+    background-color: #F8F8F8;
+    height: 510px;
 }
 
 .about-us {
     margin-left: 12%;
+    margin-top: 2.5%;
 }
 
 .about-us-section img {
-    width: 280px;
-    height: 230px;
+    width: 290px;
+    height: 200px;
 }
 
 .commercial-design {
-    width: 280px;
-    height: 400px;
+    width: 290px;
+    height: 410px;
     background-color: white;
     text-align: center;
     margin-left: 5%;
+    margin-top: 4%;
 }
 
 .residental-design {
-    width: 280px;
-    height: 400px;
+    width: 290px;
+    height: 410px;
     background-color: white;
     text-align: center;
     margin-left: 5%;
     margin-right: 12%;
+    margin-top: 4%;
 }
 
 .read-more-btn {
@@ -228,7 +211,6 @@
 }
 
 .footer {
-    margin-top: 1%;
     background-image: url('../images/footer.jpg');
     background-size: cover;
     height: 500px;
@@ -238,8 +220,9 @@
 .our-services {
     color: white;
     margin-top: 10%;
-    margin-left: 7%;
-    margin-right: 4%;
+    margin-left: 9%;
+    margin-right: 5%;
+    width: 500px;
 }
 
 .other-services {
@@ -251,27 +234,33 @@
 .design-planning {
     margin-top: 1%;
     margin-right: 2%;
+    width: 300px;
 }
 
 .services-management {
     margin-top: 1%;
-    margin-right: 2%;
+    width: 300px;
+    margin-left: 1.5%;
 }
 
 .other-services img {
-    text-align: center;
     width: 60px;
     cursor: pointer;
 }
 
 .other-services h4 {
     cursor: pointer;
+    text-align: center;
+}
+
+.other-services p {
+    text-align: center;
 }
 
 .design-planning img {
-    margin-left: 12%;
+    margin-left: 40%;
 }
 
 .services-management img {
-    margin-left: 18%;
+    margin-left: 40%;
 }
