@@ -109,8 +109,8 @@ body {
     height: 29px;
     padding-left: 10px;
     outline: none;
-    border: #F0F0F0;
-    background-color: #F0F0F0;
+    border: #F8F8F8;
+    background-color: #F8F8F8;
     font-size: 13px;
 }
 
@@ -124,8 +124,8 @@ body {
     margin-top: 13px;
     padding-left: 10px;
     outline: none;
-    border: #F0F0F0;
-    background-color: #F0F0F0;
+    border: #F8F8F8;
+    background-color: #F8F8F8;
     font-size: 13px;
 }
 
@@ -133,21 +133,25 @@ body {
     margin-top: 13px;
     padding-left: 10px;
     outline: none;
-    border: 2px solid #F0F0F0;
-    background-color: #F0F0F0;
+    border: 2px solid #F8F8F8;
+    background-color: #F8F8F8;
     font-size: 13px;
 }
 
-.input-container i {
-    padding: 6.9px;
-    color: white;
-    background-color: #F0F0F0;
+.input-container span {
+    color: #E0E0E0;
+    background-color: #F8F8F8;
     text-align: center;
-    min-width: 20px;
     margin-top: 13px;
+    padding-left: 9px;
+    padding-top: 4px;
 }
 
-#user-icon {
+::placeholder {
+    color: black;
+}
+
+#person-icon {
     margin-top: 20px;
 }
 
@@ -173,7 +177,7 @@ body {
 
 .about-us-section {
     display: flex;
-    background-color: #F4F4F4;
+    background-color: #F8F8F8;
     height: 530px;
 }
 
