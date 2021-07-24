@@ -30,7 +30,7 @@
             </div>
 
             <nav class="navbar">
-                <img src="../images/Interiart.jpeg" alt="image">
+                <img src="../images/Interiart.jpeg" alt="imteriart logo">
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
@@ -52,19 +52,19 @@
                     <div class="line"></div>
                     <div class="input-container">
                         <span class="material-icons-outlined" id="person-icon">person_outline</span>
-                        <input class="name" name="name" id="name" pattern="^[A-Za-z ]{3,}$" title="Only alphabets are allowed. Minimum length should be three." placeholder="Your name" type="text" required>
+                        <input class="name" name="name" pattern="^[A-Za-z ]{3,}$" title="Only alphabets are allowed. Minimum length should be three." placeholder="Your name" type="text" required>
                     </div>
                     <div class="input-container">
                         <span class="material-icons-outlined">phone</span>
-                        <input class="phone" name="phone" id="phone" pattern="^[0-9]{10}$" title="Only numbers are allowed. Length should be ten digit." placeholder="Your phone" type="text" required>
+                        <input class="phone" name="phone" pattern="^[0-9]{10}$" title="Only numbers are allowed. Length should be ten digit." placeholder="Your phone" type="text" required>
                     </div>
                     <div class="input-container">
                         <span class="material-icons-outlined">mail_outline</span>
-                        <input class="email" name="email" id="email" placeholder="Your email" type="email" required>
+                        <input class="email" name="email" placeholder="Your email" type="email" required>
                     </div>
                     <div class="input-container">
                         <span class="material-icons-outlined">home</span>
-                        <select class="property" name="property" id="property" required>
+                        <select class="property" name="property" required>
                             <option value="" disabled selected>Type of property</option>
                             <option value="property type 1">Property type 1</option>
                             <option value="property type 2">Property type 2</option>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="input-container">
                         <span class="material-icons-outlined">settings</span>
-                        <select class="service" name="service" id="service" required>
+                        <select class="service" name="service" required>
                             <option value="" disabled selected>Type of service</option>
                             <option value="service type 1">Service type 1</option>
                             <option value="service type 2">Service type 2</option>
@@ -82,7 +82,7 @@
                     </div>
                     <div class="input-container">
                         <span class="material-icons-outlined">mode_comment</span>
-                        <textarea class="message" name="message" id="message" placeholder="Your message" cols="21" rows="6" required></textarea>
+                        <textarea class="message" name="message" placeholder="Your message" cols="21" rows="6" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">SUBMIT</button>
                 </form>
@@ -99,14 +99,14 @@
             </div>
 
             <div class="commercial-design">
-                <img src="../images/Commercial_Design.jpg" alt="image">
+                <img src="../images/Commercial_Design.jpg" alt="commercial design">
                 <h4>COMMERCIAL DESIGN</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsum ratione necessitatibus porro.</p>
                 <button class="read-more-btn">READ MORE</button>
             </div>
 
             <div class="residental-design">
-                <img src="../images/Residential_Design.jpg" alt="image">
+                <img src="../images/Residential_Design.jpg" alt="residental design">
                 <h4>RESIDENTAL DESIGN</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, voluptatum quicvvs possimus.</p>
                 <button class="read-more-btn">READ MORE</button>
@@ -124,12 +124,12 @@
             <div class="other-services">
                 <div class="design-planning">
                     <div>
-                        <img src="../images/interior-design.png" alt="image">
+                        <img src="../images/interior-design.png" alt="interior design">
                         <h4>INTERIOR DESIGN</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quaerat quas laboriosam modi iste ullam.</p>
                     </div>
                     <div>
-                        <img src="../images/space-planing.png" alt="image">
+                        <img src="../images/space-planing.png" alt="space planing">
                         <h4>SPACE PLANNING</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus rem labore quae deleniti dolorem totam.</p>
                     </div>
@@ -137,12 +137,12 @@
 
                 <div class="services-management">
                     <div>
-                        <img src="../images/decorative-services.png" alt="image">
+                        <img src="../images/decorative-services.png" alt="decorative services">
                         <h4>DECORATIVE SERVICES</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores architecto est labore rerum saepe delectus.</p>
                     </div>
                     <div>
-                        <img src="../images/project-management.png" alt="image">
+                        <img src="../images/project-management.png" alt="project management">
                         <h4>PROJECT MANAGEMENT</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eveniet nulla expedita, id harum esse!</p>
                     </div>
@@ -156,23 +156,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     jQuery('#get-quote-form').on('submit', function (e) {
-        var name = $('#name').val();
-        var phone = $('#phone').val();
-        var email = $('#email').val();
-        var property = $('#property').val();
-        var service = $('#service').val();
-        var message = $('#message').val();
         jQuery.ajax({
             url: 'http://127.0.0.1:8000/user/register/',
             type: 'POST',
-            data: {
-                name: name,
-                phone: phone,
-                email: email,
-                property: property,
-                service: service,
-                message: message
-            },
+            data: jQuery('#get-quote-form').serialize(),
             success: function (response) {
                 alert('Registration successful!');
                 // Refresh page
